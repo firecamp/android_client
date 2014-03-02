@@ -1,5 +1,9 @@
 <resources>
 
     <string name="app_name">FireCamp</string>
+    <string name="tab_map">Map</string>
+    <string name="tab_events">Events</string>
+    <string name="tab_people">People</string>
+    <string name="tab_profile">Profile</string>
 
 </resources>
