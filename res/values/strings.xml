@@ -1,9 +1,13 @@
 <resources>
 
     <string name="app_name">FireCamp</string>
+    <string name="app_facebook_id">347174108753745</string>
+    <string name="app_google_maps_key"></string>
     <string name="tab_map">Map</string>
     <string name="tab_events">Events</string>
     <string name="tab_people">People</string>
     <string name="tab_profile">Profile</string>
+    <string name="message_login">In order to access certain features, you must sign in with a social network profile.</string>
+    <string name="action_login">Log in</string>
 
 </resources>

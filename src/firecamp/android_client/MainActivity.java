@@ -7,10 +7,11 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.view.Menu;
+import android.view.MenuItem;
 
 public class MainActivity extends FragmentActivity implements TabListener {
 
@@ -85,6 +86,24 @@ public class MainActivity extends FragmentActivity implements TabListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         initialize();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+        case R.id.action_login:
+            startActivity(new Intent(this, LoginActivity.class));
+            break;
+        default:
+            return false;
+        }
+        return true;
     }
 
     @Override
